@@ -25,7 +25,7 @@ jobs:
       fail-fast: false
       matrix:
         image_name:
-          [cosmic, cosmic-nvidia, cosmic-silverblue, cosmic-silverblue-nvidia]
+          [cosmic-base, cosmic-base-nvidia, cosmic-silverblue, cosmic-silverblue-nvidia]
         fedora_version: [41]
     env:
       IMAGE_TAG: ${{ matrix.fedora_version }}-amd64

@@ -18,7 +18,6 @@ RUN if [[ "${FEDORA_MAJOR_VERSION}" == "rawhide" ]]; then \
     rpm-ostree install \
         gnome-keyring NetworkManager-tui \
         NetworkManager-openvpn && \
-    rpm-ostree install tuned tuned-ppd && \
     systemctl disable gdm || true && \
     systemctl disable sddm || true && \
     systemctl enable cosmic-greeter && \

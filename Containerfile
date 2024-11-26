@@ -21,6 +21,5 @@ RUN if [[ "${FEDORA_MAJOR_VERSION}" == "rawhide" ]]; then \
     systemctl disable gdm || true && \
     systemctl disable sddm || true && \
     systemctl enable cosmic-greeter && \
-    systemctl enable power-profiles-daemon && \
     ostree container commit && \
     mkdir -p /var/tmp && chmod -R 1777 /var/tmp

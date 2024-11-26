@@ -14,7 +14,7 @@ RUN if [[ "${FEDORA_MAJOR_VERSION}" == "rawhide" ]]; then \
             https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-$(rpm -E %fedora)/ryanabx-cosmic-epoch-fedora-$(rpm -E %fedora).repo \
     ; fi && \
     rpm-ostree install \
-        cosmic-desktop \
+        cosmic-desktop && \
     rpm-ostree install \
         gnome-keyring NetworkManager-tui \
         NetworkManager-openvpn && \
